@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+<project
+  name="token-sms"
+  default="build"
+  basedir="."
+  description="Validate emails with tokens and PortaText SMS ">
+
+  <target name="test">
+    <exec command="vendor/bin/phpunit -v --debug -c test/resources/phpunit.xml"
+      checkreturn="true"
+      passthru="true"/>
+  </target>
+
+</project>

@@ -1,0 +1,33 @@
+{
+  "name": "tokens-sms",
+  "description": "Validate emails with tokens and PortaText SMS ",
+  "authors": [
+      {
+          "name": "Diego Alvarez",
+          "email": "diegoalvarez17@gmail.com"
+      }
+  ],
+  "autoload": {
+    "psr-4": {
+      "TokenSms\\": "src/TokenSms"
+    }
+  },
+  "license": "Apache-2.0",
+  "require": {
+    "php": ">= 5.3.0",
+    "psr/log": ">= 1.0.0",
+    "portatext/php-sdk": "1.4",
+    "sendgrid/sendgrid": "^4.0"
+  },
+  "require-dev": {
+    "phpunit/phpunit": "4.*",
+    "monolog/monolog": "1.*",
+    "squizlabs/php_codesniffer": "2.5.1",
+    "phpdocumentor/phpdocumentor": "2.*",
+    "phing/phing": "2.*",
+    "phpmd/phpmd": "2.*",
+    "satooshi/php-coveralls": "0.*",
+    "evert/phpdoc-md" : "~0.1.1",
+    "sebastian/phpcpd": "*"
+  }
+}

@@ -1,0 +1,42 @@
+<phpunit
+    backupGlobals="true"
+    backupStaticAttributes="false"
+    bootstrap="bootstrap.php"
+    cacheTokens="false"
+    colors="true"
+    convertErrorsToExceptions="true"
+    convertNoticesToExceptions="true"
+    convertWarningsToExceptions="true"
+    forceCoversAnnotation="false"
+    mapTestClassNameToCoveredClassName="false"
+    processIsolation="false"
+    stopOnError="true"
+    stopOnFailure="true"
+    stopOnIncomplete="true"
+    stopOnSkipped="true"
+    stopOnRisky="true"
+    timeoutForSmallTests="1"
+    timeoutForMediumTests="10"
+    timeoutForLargeTests="60"
+    verbose="true">
+
+    <testsuites>
+        <testsuite name="Main Suite">
+         <directory suffix="Test.php">..</directory>
+        </testsuite>
+    </testsuites>
+
+    <filter>
+        <whitelist processUncoveredFilesFromWhitelist="true">
+            <directory suffix=".php">../../src</directory>
+        </whitelist>
+        <exclude>
+            <directory suffix=".php">../../vendor</directory>
+        </exclude>
+    </filter>
+
+    <logging>
+        <log type="coverage-html" target="../../build/coverage-html"/>
+        <log type="coverage-clover" target="../../build/logs/clover.xml"/>
+    </logging>
+</phpunit>
