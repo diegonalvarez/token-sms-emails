@@ -32,7 +32,7 @@ class TokenEmailSmsTest extends \PHPUnit_Framework_TestCase
     {
         $this->tokenEmailSms->setAddress();
         $this->tokenEmailSms->send();
-        echo 'Token Sms : '. $this->tokenEmailSms->tokenSms() . ' \n';
-        echo 'Token Email : '. $this->tokenEmailSms->tokenEmail();
+        $this->assertInternalType('string', $this->tokenEmailSms->tokenSms());
+        $this->assertInternalType('string', $this->tokenEmailSms->tokenEmail());
     }
 }
