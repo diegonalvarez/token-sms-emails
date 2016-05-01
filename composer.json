@@ -1,5 +1,5 @@
 {
-  "name": "tokens/sms",
+  "name": "tokens/email-sms",
   "type": "library",
   "description": "Validate emails with tokens and PortaText SMS ",
   "authors": [
